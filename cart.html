@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>RedStore</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="navbar">
+      <div class="logo">
+        <a href="index.html"><img src="images/logo.png" width="125px"></a>
+      </div>
+      <nav>
+        <ul id="MenuItems">
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="products.html">Товари</a></li>
+          <li><a href="">Про нас</a></li>
+          <li><a href="">Контакти</a></li>
+          <li><a href="account.html">Аккаунт</a></li>
+        </ul>
+      </nav>
+      <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+      <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+  </div>
+
+
+
+  <div class="small-container cart-page">
+    <table>
+      <tr>
+        <th>Товар</th>
+        <th>Кількість</th>
+        <th>Остаточна сума</th>
+      </tr>
+      <tr>
+        <td>
+          <div class="cart-info">
+            <img src="images/buy-1.jpg" alt="">
+            <div>
+              <p>Червона надрукована футболка</p>
+              <small>Ціна: $50.00</small>
+              <br>
+              <a href="">Видалити</a>
+            </div>
+          </div>
+        </td>
+        <td><input type="number" value="1"></td>
+        <td>$50.00</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="cart-info">
+            <img src="images/buy-2.jpg" alt="">
+            <div>
+              <p>Червона надрукована футболка</p>
+              <small>Ціна: $75.00</small>
+              <br>
+              <a href="">Видалити</a>
+            </div>
+          </div>
+        </td>
+        <td><input type="number" value="1"></td>
+        <td>$75.00</td>
+      </tr>
+      <tr>
+        <td>
+          <div class="cart-info">
+            <img src="images/buy-3.jpg" alt="">
+            <div>
+              <p>Червона надрукована футболка</p>
+              <small>Ціна: $75.00</small>
+              <br>
+              <a href="#">Видалити</a>
+            </div>
+          </div>
+        </td>
+        <td><input type="number" value="1"></td>
+        <td>$75.00</td>
+      </tr>
+    </table>
+    <div class="total-price">
+
+      <table>
+        <tr>
+          <td>Остаточна сума</td>
+          <td>$200.00</td>
+        </tr>
+        <tr>
+          <td>Чек</td>
+          <td>$35.00</td>
+        </tr>
+        <tr>
+          <td>До оплати</td>
+          <td>$230.00</td>
+        </tr>
+      </table>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col-1">
+              <h3>Скачайте наший додаток</h3>
+              <p>Скачувайте додаток для Андроїд та Ios мобільних телефонів.</p>
+              <div class="app-logo">
+                <img src="images/play-store.png" alt="">
+                <img src="images/app-store.png" alt="">
+              </div>
+            </div>
+            <div class="footer-col-2">
+              <img src="images/logo-white.png">
+              <p>Наша Ціль Полягає в Тому, Щоб Сталий Спосіб Ззробити Ззадоволення та Переваги Спорту Доступними для Багатьох</p>
+            </div>
+            <div class="footer-col-3">
+              <h3>Корисні посилання</h3>
+              <ul>
+                <li>Купони</li>
+                <li>Блог Пост</li>
+                <li>Політика повернення</li>
+                <li>Приєднатися до Партнерської компанії</li>
+              </ul>
+            </div>
+            <div class="footer-col-4">
+              <h3>Слідкуйте за нами</h3>
+              <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>Youtube</li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+          <p class="copyright">Copyright 2020</p>
+        </div>
+      </div>
+
+
+  <script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (MenuItems.style.maxHeight == "0px") {
+            MenuItems.style.maxHeight = "200px";
+      }
+      else {
+            MenuItems.style.maxHeight = "0px";
+      }
+    }
+  </script>
+
+</body>
+</html>

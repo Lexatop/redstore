@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>RedStore</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="navbar">
+      <div class="logo">
+        <a href="index.html"><img src="images/logo.png" width="125px"></a>
+      </div>
+      <nav>
+        <ul id="MenuItems">
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="products.html">Товари</a></li>
+          <li><a href="">Про нас</a></li>
+          <li><a href="">Контакти</a></li>
+          <li><a href="accout.html">Аккаунт</a></li>
+        </ul>
+      </nav>
+      <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+      <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+  </div>
+
+
+  <div class="account-page">
+    <div class="container">
+      <div class="row">
+        <div class="col-2">
+          <img src="images/image1.png" width="100%">
+        </div>
+
+        <div class="col-2">
+          <div class="form-container">
+            <div class="form-btn">
+              <span onclick="login()">Вхід</span>
+              <span onclick="register()">Реєстрація</span>
+              <hr id="Indicator">
+            </div>
+
+            <form action="" id="LoginForm">
+              <input type="text" placeholder="Ім'я користувача">
+              <input type="text"  placeholder="Пароль">
+              <button type="submit" class="btn">Зайти</button>
+              <a href="">Забув пароль?</a>
+            </form>
+
+            <form action="" id="RegForm">
+              <input type="text" placeholder="Ім'я користувача">
+              <input type="text"  placeholder="Пошта">
+              <button type="submit" class="btn">Реєстрація</button>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col-1">
+              <h3>Скачайте наший додаток</h3>
+              <p>Скачувайте додаток для Андроїд та Ios мобільних телефонів.</p>
+              <div class="app-logo">
+                <img src="images/play-store.png" alt="">
+                <img src="images/app-store.png" alt="">
+              </div>
+            </div>
+            <div class="footer-col-2">
+              <img src="images/logo-white.png">
+              <p>Наша Ціль Полягає в Тому, Щоб Сталий Спосіб Ззробити Ззадоволення та Переваги Спорту Доступними для Багатьох</p>
+            </div>
+            <div class="footer-col-3">
+              <h3>Корисні посилання</h3>
+              <ul>
+                <li>Купони</li>
+                <li>Блог Пост</li>
+                <li>Політика повернення</li>
+                <li>Приєднатися до Партнерської компанії</li>
+              </ul>
+            </div>
+            <div class="footer-col-4">
+              <h3>Слідкуйте за нами</h3>
+              <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>Youtube</li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+          <p class="copyright">Copyright 2020</p>
+        </div>
+      </div>
+
+
+  <script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (MenuItems.style.maxHeight == "0px") {
+            MenuItems.style.maxHeight = "200px";
+      }
+      else {
+            MenuItems.style.maxHeight = "0px";
+      }
+    }
+  </script>
+
+  <script type="text/javascript">
+    var LoginForm = document.getElementById("LoginForm");
+    var RegForm = document.getElementById("RegForm");
+    var Indicator = document.getElementById("Indicator");
+
+    function register (){
+      RegForm.style.transform = "translateX(0px)";
+      LoginForm.style.transform = "translateX(0px)";
+      Indicator.style.transform = "translateX(100px)";
+    }
+
+    function login (){
+      RegForm.style.transform = "translateX(300px)";
+      LoginForm.style.transform = "translateX(300px)";
+      Indicator.style.transform = "translateX(0px)";
+    }
+
+
+
+
+  </script>
+
+</body>
+</html>
